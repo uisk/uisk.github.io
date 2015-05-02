@@ -22,10 +22,8 @@ h2{
 .fullsize {
     background-attachment: fixed;
     background-size: cover;
-    -webkit-background-size: cover;
     background-position: bottom right;    
     padding: 5px;
-    position: relative;
     min-height: 100%;    
 }
 
@@ -107,7 +105,7 @@ h2{
 }
 
 .second {
-    background-image: url(./images/library.png);
+    background-image: url(./images/library.svg);
 }
 
 .second .claim-container{
@@ -218,4 +216,28 @@ h2{
         text-align: center;
     }
 
+}
+
+/* iOS Hacks */
+
+.ios .fullsize{
+    background-attachment: scroll;
+    background-size: auto; 
+    background-repeat: no-repeat;
+}
+
+.ios .first{
+    background-size: cover;
+}
+.ios .second{
+    background-position: top right;   
+}
+.ios .third{
+    background-position: top right;  
+}
+.ios .fourth{
+    background-position: top right;  
+}
+.ios .claim-container{
+    margin-bottom: 100px;
 }
