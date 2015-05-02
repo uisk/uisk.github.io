@@ -49,6 +49,7 @@ h2{
 .mobile  .mobile-background .mobile-first{
     background-image: url(./images/street.svg);
     /*background-color: red;*/
+    opacity: 1;
     z-index: -1004;
 }
 .mobile  .mobile-background .mobile-second{
