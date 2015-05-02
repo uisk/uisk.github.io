@@ -31,21 +31,11 @@ h1{
 .claim-container {
     width: 60%;
     position: relative;
-    
-    
+    margin-left: 40px;
+    margin-top: 450px;
+    margin-bottom: 450px;
     border-width: 40px;
     border-style: solid;
-
-
-/*    background-attachment: fixed;
-    background-repeat:no-repeat;
-    background-size: 100% 100%;
-    background-position: top left;    
-    position: relative;
-    background-size: auto 100%;
-    padding-left: 8%;
-    padding-top: 8%;
-    padding-bottom: 8%;*/
 }
 
 .claim-wrapper{
@@ -53,7 +43,7 @@ h1{
     height: 100%;
     background-color: white;
     padding-top: 20px;
-    padding-left: 20px;
+    padding-left: 10px;
     padding-right: 40px; 
     padding-bottom: 20px;   
 }
@@ -73,12 +63,38 @@ h1{
 
 .claim ul{
     list-style-position: outside;
-    list-style-type: disc;
+    list-style: none;
+    padding: 0;
+    margin-left: 0px;
     
 }
 
 .claim li{
-    padding-left: 40px;
+    background: url(http://cdn1.iconfinder.com/data/icons/c9d/check.png) 25px 50% no-repeat;
+    padding-left: 80px;
+    margin-bottom: 20px;
+    vertical-align: top;
+}
+
+.claim li p {
+    /*margin-left: 40px;*/
+}
+
+.claim .bullet{
+    background-color: rgb(137,  137, 137 );
+    border-radius: 9000px;
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.claim .bullet-wrap{
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 100%;
+
 }
 
 
@@ -124,7 +140,19 @@ h1{
 
 .fill {
     height: 100px;
-    background-color: black;
+    background-color: rgb(112 ,112,112);
+    border-bottom: 4px solid rgb(250 ,250,250);
+}
+
+.floor{
+    background-image: url(./images/bricks.jpg) ;
+       /* background-repeat:no-repeat;*/
+       background-repeat: repeat;
+
+    background-size: 150px 150px;
+    background-attachment: fixed;
+    border-top: 4px solid rgb(250 ,250,250);
+    border-bottom: 4px solid rgb(250 ,250,250);
 }
 
 
@@ -132,4 +160,41 @@ h1{
 
 .second .claim-container{
     /*background-image: url(./images/library_textbox.svg);*/
+}
+
+
+@media (max-width: 768px) {
+    .claim-container {
+        width: 100%;
+        position: relative;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 450px;
+        margin-bottom: 450px;
+        border-width: 40px;
+        border-style: solid;
+    }
+
+    .claim-wrapper{
+        padding-right: 10px;
+    }
+
+
+    .claim li{
+        background: url(http://cdn1.iconfinder.com/data/icons/c9d/check.png) 50% 25px no-repeat;
+        padding-top: 70px;
+
+        padding-left: 0px;
+        margin-left: 0px;
+        vertical-align: top;
+        text-align: center;
+    }
+
+
+
+    .claim h1{
+        margin-left: 0px;
+        text-align: center;
+    }
+
 }
