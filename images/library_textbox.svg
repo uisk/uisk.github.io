@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+
+   xml:space="preserve"
+
+   id="Vrstva_1"
+   version="1.1"><metadata
+     id="metadata25"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs23" /><g
+     transform="translate(-401.7,-276)"
+     id="g3"><polygon
+       style="opacity:0.63999999;fill:#006954"
+       id="polygon5"
+       points="401.7,276 401.7,722.5 913.1,722.5 1198.9,276 " /><polygon
+       style="fill:#ffffff"
+       id="polygon7"
+       points="432.5,674.6 895.7,674.6 1117.4,328.3 432.5,328.3 " /></g></svg>

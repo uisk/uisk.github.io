@@ -1,0 +1,135 @@
+﻿/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
+    height: 100%;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+.fullsize {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom right;    
+    padding: 5px;
+    position: relative;
+    min-height: 100%;    
+}
+
+.claim-container {
+    width: 60%;
+    position: relative;
+    
+    
+    border-width: 40px;
+    border-style: solid;
+
+
+/*    background-attachment: fixed;
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    background-position: top left;    
+    position: relative;
+    background-size: auto 100%;
+    padding-left: 8%;
+    padding-top: 8%;
+    padding-bottom: 8%;*/
+}
+
+.claim-wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 40px; 
+    padding-bottom: 20px;   
+}
+
+.claim {
+    font-family: sans-serif;
+    font-size: 20px;
+    color: rgba(53,  53,  53 , 1);
+    padding-left: 0px;
+ 
+
+}
+
+.claim h1{
+    margin-left: 80px;
+}
+
+.claim ul{
+    list-style-position: outside;
+    list-style-type: disc;
+    
+}
+
+.claim li{
+    padding-left: 40px;
+}
+
+
+
+
+
+.first {
+    background-image: url(./images/street.svg);
+}
+
+.second {
+    background-image: url(./images/library.svg);
+}
+
+.second .claim-container{
+    border-color: rgba(0, 105, 84, .5);
+}
+
+.second h1{
+
+}
+
+.third {
+    background-image: url(./images/office.svg);
+}
+
+.third .claim-container{
+
+    border-color: rgba(211, 43,  40, .5);
+}
+
+.third h1{
+    color: rgba(211, 43,  40, 1);
+    padding-bottom: 20px;
+    border-bottom: solid 1px rgba(211, 43,  40, 1);
+}
+
+
+
+.fourth {
+    background-image: url(./images/bar.svg);
+}
+
+.fill {
+    height: 100px;
+    background-color: black;
+}
+
+
+
+
+.second .claim-container{
+    /*background-image: url(./images/library_textbox.svg);*/
+}
