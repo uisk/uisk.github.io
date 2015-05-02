@@ -266,6 +266,10 @@ h2{
     border-bottom: 4px solid rgb(250 ,250,250);
 }
 
+.mobile .fill{
+    display: none;
+}
+
 .floor{
     background-image: url(./images/bricks.jpg) ;
        /* background-repeat:no-repeat;*/
@@ -324,26 +328,3 @@ h2{
 
 }
 
-/* iOS Hacks */
-
-/*.ios .fullsize{
-    background-attachment: scroll;
-    background-size: auto; 
-    background-repeat: no-repeat;
-}
-
-.ios .first{
-    background-size: cover;
-}
-.ios .second{
-    background-position: top right;   
-}
-.ios .third{
-    background-position: top right;  
-}
-.ios .fourth{
-    background-position: top right;  
-}
-.ios .claim-container{
-    margin-bottom: 100px;
-}*/
