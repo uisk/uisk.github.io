@@ -114,7 +114,9 @@ h1{
 }
 
 .second h1{
-
+    color: rgba(0, 105, 84, 1);
+    padding-bottom: 20px;
+    border-bottom: solid 1px rgba(0, 105, 84, 1);
 }
 
 .third {
@@ -136,6 +138,24 @@ h1{
 
 .fourth {
     background-image: url(./images/bar.svg);
+}
+
+.fourth .claim-container{
+     border-color: rgba(37, 56,  99, .5);
+}
+
+.fourth h1{
+    color: rgb(37, 56,  99);
+    padding-bottom: 20px;
+    border-bottom: solid 1px rgb(37, 56,  99);
+}
+
+.fourth a{
+    color: rgb(37, 56,  99);
+}
+
+.fourth a:visited{
+    color: rgba(37, 56,  99, .8);
 }
 
 .fill {
