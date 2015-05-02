@@ -2,7 +2,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
     <title></title>
     <link href="style.css" rel="stylesheet" />
 </head>
@@ -60,5 +60,13 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript">
+        var iOS = false;
+        iOS = /(iPad|iPhone|iPod)/g.test( navigator.userAgent );
+        if(iOS){
+            document.body.className+=' ios'
+        }
+    </script>
 </body>
+
 </html>
