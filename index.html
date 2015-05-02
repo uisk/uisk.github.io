@@ -7,13 +7,24 @@
     <link href="style.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="fullsize first">
+    <div class="mobile-background">
+                <div class="mobile-first mobile-fullsize"></div>
+                <div class="mobile-second mobile-fullsize"></div>
+                <div class="mobile-third mobile-fullsize"></div>
+        <div class="mobile-fourth mobile-fullsize"></div>
+        
+        
+
+        
+        
+    </div>
+    <div class="fullsize first" data-linked-element="mobile-first">
         <div class="claim">
             <h1>Some content</h1>
         </div>
     </div>
     <div class="fill"></div>
-    <div class="fullsize second">
+    <div class="fullsize second" data-linked-element="mobile-second">
         <div class="claim-container">
             <div class="claim-wrapper">
                 <div class="claim">
@@ -29,7 +40,7 @@
         </div>
     </div>
     <div class="fill floor"></div>
-    <div class="fullsize third">
+    <div class="fullsize third" data-linked-element="mobile-third">
         <div class="claim-container">
             <div class="claim-wrapper">
                 <div class="claim">
@@ -45,7 +56,7 @@
         </div>
     </div>
     <div class="fill floor"></div>
-    <div class="fullsize fourth">
+    <div class="fullsize fourth" data-linked-element="mobile-fourth">
         <div class="claim-container">
             <div class="claim-wrapper">
                 <div class="claim">
@@ -60,12 +71,46 @@
             </div>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script type="text/javascript">
+
+
+        var isWithinBounds = function(scrollTop,scrollBottom,element){
+            var viewportHeight = scrollBottom-scrollTop;
+            var posTop = element.position().top;
+            var diffFromBotomm = scrollBottom-posTop;
+            //console.log("diffFromBotomm: "  + diffFromBotomm);
+            if(diffFromBotomm > 0){
+                var result = Math.pow(diffFromBotomm/viewportHeight,1/3);
+                //console.log("Setting " + "." + element.attr('data-linked-element')  + " to " + Math.min(1,result));
+                $("." + element.attr('data-linked-element')).css("opacity",Math.min(1,result));
+            }else{
+                $("." + element.attr('data-linked-element')).css("opacity",0);
+
+            }
+        }
+
         var iOS = false;
+        var mobile = true;
         iOS = /(iPad|iPhone|iPod)/g.test( navigator.userAgent );
         if(iOS){
             document.body.className+=' ios'
         }
+        if(mobile){
+            document.body.className+=' mobile'
+             $(document).scroll(function(){
+            var scrollPosTop = $(this).scrollTop();
+            var scrollPosBottom = scrollPosTop + $(window).height();
+            $(".fullsize").each(function(){
+                isWithinBounds(scrollPosTop,scrollPosBottom,$(this));
+            });
+            });
+        }
+
+
+
+
+
     </script>
 </body>
 
