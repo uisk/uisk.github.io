@@ -89,7 +89,7 @@
             var diffFromBotomm = scrollBottom-posTop;
             //console.log("diffFromBotomm: "  + diffFromBotomm);
             if(diffFromBotomm > 0){
-                var result = Math.pow(diffFromBotomm/viewportHeight,1/3);
+                var result = Math.pow(diffFromBotomm/viewportHeight,3 );
                 //console.log("Setting " + "." + element.attr('data-linked-element')  + " to " + Math.min(1,result));
                 $("." + element.attr('data-linked-element')).css("opacity",Math.min(1,result));
             }else{
