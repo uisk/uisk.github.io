@@ -10,6 +10,7 @@ body {
     padding: 0;
     margin: 0;
     min-height:100%;
+    font-family: 'dosis', sans-serif;
 }
 
 body, html {
@@ -25,12 +26,14 @@ h1{
     color: #75133b;
     margin-left: 30px;
     margin-right: auto;
+    font-weight: bolder;
     /*margin-top: 40px;*/
     text-align: left;
 }
 
 h1,h2{
     text-transform: uppercase;
+    font-weight: bolder;
 }
 
 .mobile .mobile-background{
@@ -111,14 +114,15 @@ h1,h2{
     padding-bottom: 20px;   
 }
 
-.claim {
-    font-family: sans-serif;
+.claim {   
     font-size: 20px;
     color: rgba(53,  53,  53 , 1);
     padding-left: 0px;
- 
-
 }
+
+    .claim h1 {
+        font-weight: bold;
+    }
 
 .claim h2{
     margin-left: 80px;
