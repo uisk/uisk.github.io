@@ -267,6 +267,12 @@ h2{
     background-image: url(./images/icons/3-4.png);
 }
 
+
+.fifth {
+    background-image: url(./images/prihlaska.svg);
+    background-position: top center;   
+}
+
 .fill {
     height: 100px;
     background-color: rgb(112 ,112,112);
