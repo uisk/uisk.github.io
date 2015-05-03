@@ -357,8 +357,14 @@ a.btn:hover {
     font-size: 37px;
 }
 
-.fifth a{
+.fifth a, .fifth a:visited{    
+    text-decoration: underline;
+    color: rgb(4,70,110);
+}
+
+.fifth a:hover {
     text-decoration: none;
+    color: rgb(10,140,220);
 }
 
 .fifth .info{
