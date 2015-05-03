@@ -225,6 +225,16 @@ strong {
     background-image: url(./images/street.svg);
 }
 
+.first img.scroll-btn {
+    position: absolute;
+    bottom: 3%;
+    left:  49%;    
+}
+
+
+
+
+
 .second {
     background-image: url(./images/library.svg);
 }
@@ -554,4 +564,3 @@ a.btn:hover {
             left: 5%;
         }
 }
-
