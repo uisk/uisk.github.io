@@ -368,14 +368,13 @@ a.btn:hover {
     text-align: center;
     font-size: 30px;
     color: rgb(6,106,166);
-    bottom: 0;
+    bottom: 20%;
     left: 25%;
     right: 25%;
 }
 
 .fifth .more {
-    margin-top: 20px;
-    margin-bottom: -15px;
+    margin-top: 20px;   
 }
 
 .fill {
@@ -454,6 +453,7 @@ a.btn:hover {
             left: 1%;
             right: 1%;
             font-size: 20px;
+            bottom: 0;
         }
 
         .fifth .more {
