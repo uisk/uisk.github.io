@@ -112,8 +112,9 @@
 
         var mobile = false;
         mobile = $.browser.mobile;
-        $(".fifth").css("height",$(window).height()*1.1);
+        
         if(mobile){
+            $(".fifth").css("height",$(window).height()*1.1);
             document.body.className+=' mobile'
              $(document).scroll(function(){
                 var scrollPosTop = $(this).scrollTop();
