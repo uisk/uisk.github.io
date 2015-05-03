@@ -227,7 +227,7 @@ strong {
 
 .first img.scroll-btn {
     position: absolute;
-    bottom: 3%;
+    bottom: -10px;
     left:  49%;    
 }
 

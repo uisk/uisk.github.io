@@ -150,6 +150,13 @@
                     isWithinBounds(scrollPosTop,scrollPosBottom,$(this));
                 });                
             });
+        } else {
+            $('.scroll-btn').click(function () {
+
+                $('html, body').animate({
+                    scrollTop: $(".fullsize.second").offset().top
+                }, 2000);
+            });
         }
 
 
@@ -163,12 +170,7 @@
             $('.info-overlay').slideUp();
         });
 
-        $('.scroll-btn').click(function () {
-          
-                $('html, body').animate({
-                    scrollTop: $(".fullsize.second").offset().top
-                }, 2000);            
-        });
+       
 
     </script>
 </body>
