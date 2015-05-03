@@ -294,6 +294,8 @@ h1{
   background-repeat: no-repeat;
   background-color: #b2e0f8;
   background-attachment: fixed;
+  height: 100%;
+  overflow: hidden;
 }
 
 .fifth .claim{
@@ -345,13 +347,16 @@ a.btn:hover {
 }
 
 .fifth .info{
+    position: absolute;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 160px;
-    width: 80%;
+    margin-top: 160px;    
     text-align: center;
     font-size: 30px;
     color: rgb(6,106,166);
+    bottom: 0;
+    left: 25%;
+    right: 25%;
 }
 
 .fill {
