@@ -288,18 +288,42 @@ h1{
 
 
 .fifth {
-    background-image: url(./images/prihlaska.svg);
-    background-position: top center;   
+  background-image: url(./images/prihlaska.svg);
+  background-position: top center;
+  background-size: 1200px 600px;
+  background-repeat: no-repeat;
+  background-color: #b2e0f8;
+  background-attachment: fixed;
+}
+
+.fifth .claim{
 }
 
 .fifth .envelope{
     width: 206px;
     height: 170px;
     text-align: center;
-    margin:80px auto;
-    padding-top: 8px;
-    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 76px;
+    padding-top: 0px;
+    font-size: 18px;
 
+}
+
+a.btn {
+        background: none;
+        border: dashed 4px white;
+        border-radius: 20px;
+        font-size: 24px;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+    }
+
+a.btn:hover {
+    background-color: rgb(255,255,255);
+    color: #ccc;
 }
 
 
@@ -318,6 +342,16 @@ h1{
 
 .fifth a{
     text-decoration: none;
+}
+
+.fifth .info{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 160px;
+    width: 80%;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(6,106,166);
 }
 
 .fill {
