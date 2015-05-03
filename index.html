@@ -114,16 +114,39 @@
         mobile = $.browser.mobile;
         
         if(mobile){
-            $(".fifth").css("height",$(window).height()*1.1);
+            // $(".fifth").css("height",$(window).height()*1.1);
             document.body.className+=' mobile'
-             $(document).scroll(function(){
+            
+            $(document).scroll(function(){
                 var scrollPosTop = $(this).scrollTop();
                 var scrollPosBottom = scrollPosTop + $(window).height();
                 $(".fullsize").each(function(){
                     isWithinBounds(scrollPosTop,scrollPosBottom,$(this));
                 });
-                $(".fifth").css("height",$(window).height()*1.1);
+                // $(".fifth").css("height",$(window).height()*1.1);
             });
+
+            function doOnOrientationChange()
+            {
+                    switch(window.orientation) 
+                    {  
+                      case -90:
+                      case 90:
+                        $(".mobile-fullsize").css('min-height',window.screen.availWidth);
+                        $(".fifth").css('min-height',window.screen.availWidth);
+                        break; 
+                      default:
+                        $(".mobile-fullsize").css('min-height',window.screen.availHeight);
+                        $(".fifth").css('min-height',window.screen.availHeight);
+                        break; 
+                    }
+
+            }
+
+            window.addEventListener('orientationchange', doOnOrientationChange);
+
+            doOnOrientationChange();
+
         }
 
 
