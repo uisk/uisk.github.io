@@ -17,14 +17,21 @@ body, html {
     height: 100%;
 }
 
-h1{
-    color: white;
-    margin-left: 40px;
-    margin-top: 40px;
-    font-weight: bolder;
+.title{
+    margin:80px auto;
+    width: 370px;
 }
 
-h2{
+h1{
+    color: #75133b;
+    margin-left: 30px;
+    margin-right: auto;
+    font-weight: bolder;
+    /*margin-top: 40px;*/
+    text-align: left;
+}
+
+h1,h2{
     text-transform: uppercase;
     font-weight: bolder;
 }
