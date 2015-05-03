@@ -22,6 +22,11 @@ body, html {
     width: 370px;
 }
 
+h1,h2{
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
 h1{
     color: #75133b;
     margin-left: 30px;
@@ -32,10 +37,9 @@ h1{
     font-size: 50px;
 }
 
-h1,h2{
-    text-transform: uppercase;
-    font-weight: bolder;
-}
+
+
+
 
 .mobile .mobile-background{
     z-index: -1010;
@@ -96,7 +100,7 @@ h1,h2{
 }
 
 .claim-container {
-    width: 60%;
+    width: 50%;
     position: relative;
     margin-left: 40px;
     margin-top: 450px;
@@ -116,7 +120,7 @@ h1,h2{
 }
 
 .claim {   
-    font-size: 20px;
+    font-size: 18px;
     color: rgba(53,  53,  53 , 1);
     padding-left: 0px;
 }
@@ -126,7 +130,8 @@ h1,h2{
     }
 
 .claim h2{
-    margin-left: 80px;
+    margin-left: 70px;
+    font-size: 24px;
 }
 
 .claim ul{
@@ -140,10 +145,10 @@ h1,h2{
 .claim li{
     
     background-position: 12px 50%;
-    background-size: 50px;
+    background-size: 40px;
 
     background-repeat: no-repeat;
-    padding-left: 80px;
+    padding-left: 70px;
     padding-top: 20px;
     padding-bottom: 20px;
     vertical-align: top;
@@ -195,7 +200,7 @@ h1,h2{
 
 .second h2{
     color: rgba(0, 105, 84, 1);
-    padding-bottom: 20px;
+    padding-bottom: 14px;
     border-bottom: solid 3px rgba(0, 105, 84, 1);
 }
 
@@ -223,7 +228,7 @@ h1,h2{
 
 .third h2{
     color: rgba(211, 43,  40, 1);
-    padding-bottom: 20px;
+    padding-bottom: 14px;
     border-bottom: solid 3px rgba(211, 43,  40, 1);
 }
 
@@ -254,7 +259,7 @@ h1,h2{
 
 .fourth h2{
     color: rgb(37, 56,  99);
-    padding-bottom: 20px;
+    padding-bottom: 14px;
     border-bottom: solid 3px rgb(37, 56,  99);
 }
 
@@ -293,12 +298,14 @@ h1,h2{
     text-align: center;
     margin:80px auto;
     padding-top: 8px;
+    font-size: 20px;
 
 }
 
 
 .fifth .envelope a{
     color: white;
+
 }
 
 .fifth .envelope a:visited{
