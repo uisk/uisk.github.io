@@ -71,23 +71,42 @@ h1{
     background-image: url(./images/street.svg);
     /*background-color: red;*/
     opacity: 1;
-    z-index: -1004;
+    z-index: -1005;
 }
 .mobile  .mobile-background .mobile-second{
     background-image: url(./images/library.svg);
     /*background-color: green;*/
-    z-index: -1003;
+    z-index: -1004;
 }
 .mobile  .mobile-background .mobile-third{
     background-image: url(./images/office.svg);
     /*background-color: blue;*/
-    z-index: -1002;
+    z-index: -1003;
 }
 .mobile  .mobile-background .mobile-fourth{
     background-image: url(./images/bar.svg);
     /*background-color: orange;*/
-    z-index: -1001;
+    z-index: -1002;
 }
+
+.mobile  .mobile-background .mobile-fifth{
+/*    background-image: url(./images/prihlaska.svg);
+    background-position: top center;
+    background-size: 1200px 600px;
+
+    z-index: -1001;*/
+
+}
+
+/*.mobile  .mobile-background .mobile-fifth {
+  background-image: url(./images/prihlaska.svg);
+  background-position: top center;
+  background-size: 1200px 600px;
+  background-repeat: no-repeat;
+  background-color: #b2e0f8;
+  background-attachment: fixed;
+  overflow: hidden;
+}*/
 
 
 .fullsize {
@@ -182,6 +201,18 @@ h1{
 .mobile .third,
 .mobile .fourth{
     background-image: none;
+    background-color: transparent;
+}
+
+.mobile .fifth{
+      background-image: url(./images/prihlaska.svg);
+      background-position: top center;
+      background-size: 1200px 600px;
+      background-repeat: no-repeat;
+      background-color: #b2e0f8;
+      background-attachment: scroll;
+      height: 100%;
+      overflow: hidden;
 }
 
 .first {
@@ -304,8 +335,8 @@ h1{
 
 
 .fifth .envelope{
-      width: 176px;
-  height: 177px;
+    width: 176px;
+    height: 177px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -315,6 +346,9 @@ h1{
 
 }
 
+.mobile .fifth .envelope{
+    margin-top: 71px;
+}
 a.btn {
         background: none;
         border: dashed 4px white;
@@ -372,6 +406,10 @@ a.btn:hover {
     bottom: 20%;
     left: 25%;
     right: 25%;
+}
+
+.mobile .fifth .info{
+    bottom: 20%; 
 }
 
 .fifth .more {

@@ -75,7 +75,7 @@
                 <a href="#" class="">PODEJ PŘIHLÁŠKU<br/><span class="envelope-big">NA ÚISK<br/>TEĎ</span></a>
             </div>
             <div class="info">
-                Už jsi se rozhodl? Podej přihlášku na tenhle božskej obor do 31. 3. 2016
+                Už ses se rozhodl? Podej přihlášku na tenhle božskej obor do 31.&nbsp;3.&nbsp;2016
                 <div class="more">
                     <a href="" class="btn">Chci o ÚISKU vědět víc</a>
                 </div>
@@ -112,14 +112,16 @@
 
         var mobile = false;
         mobile = $.browser.mobile;
+        $(".fifth").css("height",$(window).height()*1.1);
         if(mobile){
             document.body.className+=' mobile'
              $(document).scroll(function(){
-            var scrollPosTop = $(this).scrollTop();
-            var scrollPosBottom = scrollPosTop + $(window).height();
-            $(".fullsize").each(function(){
-                isWithinBounds(scrollPosTop,scrollPosBottom,$(this));
-            });
+                var scrollPosTop = $(this).scrollTop();
+                var scrollPosBottom = scrollPosTop + $(window).height();
+                $(".fullsize").each(function(){
+                    isWithinBounds(scrollPosTop,scrollPosBottom,$(this));
+                });
+                $(".fifth").css("height",$(window).height()*1.1);
             });
         }
 
