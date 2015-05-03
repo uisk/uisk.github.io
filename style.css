@@ -331,6 +331,9 @@ a.btn:hover {
     color: #ccc;
 }
 
+.fifth .envelope a:visited{
+    color: white;
+}
 
 .fifth .envelope a{
     color: white;
@@ -344,13 +347,11 @@ a.btn:hover {
 }
 
     .fifth .envelope a:hover {
-        background-color: rgba(255,255,255, .9);
+        background-color: rgba(255,255,255, .7);
         color: #777;
     }
 
-.fifth .envelope a:visited{
-    color: white;
-}
+
 
 .fifth .envelope .envelope-big{
     font-size: 37px;
