@@ -22,6 +22,10 @@ body, html {
     max-width: 360px;
 }
 
+.mobile .title{
+    margin-top: 20px;
+}
+
 h1,h2{
     text-transform: uppercase;
     font-weight: bolder;
@@ -415,6 +419,10 @@ a.btn:hover {
     right: 25%;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.mobile .fifth .info{
+    padding-bottom: 15px; 
 }
 
 .fifth .more {
