@@ -413,6 +413,8 @@ a.btn:hover {
     bottom: 20%;
     left: 25%;
     right: 25%;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .mobile .fifth .info{
