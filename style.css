@@ -460,7 +460,7 @@ a.btn:hover {
 .info-overlay {
     display: none;    
     background-color: white;
-    border-radius: 20px;
+    border-radius: 20px 20px 0 0;
     width: 60%;
     height: auto;
     max-height: 100%;
@@ -545,13 +545,8 @@ a.btn:hover {
             color: #555;
         }
 
-    .info-overlay {
-            display: none;    
-            background-color: white;
-            border-radius: 20px;
-            width: 90%;
-            height: auto;
-            max-height: 100%;
+    .info-overlay {           
+            width: 90%;           
             overflow: auto;
             position: absolute;
             bottom: 0;
