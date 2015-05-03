@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
@@ -122,31 +122,8 @@
                 var scrollPosBottom = scrollPosTop + $(window).height();
                 $(".fullsize").each(function(){
                     isWithinBounds(scrollPosTop,scrollPosBottom,$(this));
-                });
-                // $(".fifth").css("height",$(window).height()*1.1);
+                });                
             });
-
-            function doOnOrientationChange()
-            {
-                    switch(window.orientation) 
-                    {  
-                      case -90:
-                      case 90:
-                        // $(".mobile-fullsize").css('min-height',window.screen.availWidth);
-                        $(".fifth").css('min-height',window.screen.availWidth);
-                        break; 
-                      default:
-                        // $(".mobile-fullsize").css('min-height',window.screen.availHeight);
-                        $(".fifth").css('min-height',window.screen.availHeight);
-                        break; 
-                    }
-
-            }
-
-            window.addEventListener('orientationchange', doOnOrientationChange);
-
-            doOnOrientationChange();
-
         }
 
 
