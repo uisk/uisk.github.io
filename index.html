@@ -81,6 +81,31 @@
                 </div>
             </div>
         </div>
+        <div class="info-overlay">
+            <div class="close">&times;</div>
+            <h2>O studiu</h2>
+            <p>Informační věda patří mezi mladé obory ve světě i u nás.
+             Jedna z cest k informační vědě vede přes Ústav informačních 
+            studií a knihovnictví (ÚISK) a studijní obor Informační studia a knihovnictví (INSK). 
+            <strong>Bakalářské studium</strong> je zaměřeno na teoretické i praktické základy informační vědy. 
+            Navazující <strong>
+            magisterské studium
+            </strong> se větví na informační, knihovnické a knihovědné zaměření –
+            záleží pouze na volbě studenta, které specializaci se bude chtít věnovat.
+            V navazujícím magisterském studiu je dále možné studovat také obor
+            <a href="http://novamedia.ff.cuni.cz/" target="_blank">Studia nových médií</a>. Ústav jako jediný
+            v České republice nabízí také <strong>doktorské studium</strong> v oboru Informační věda,
+            které se věnuje 
+            rozmanité aktuální problematice oboru.</p>
+            <h2>Kam dál?</h2>
+            <ul>
+                <li><a href="https://is.cuni.cz/studium/login.php?do=prihlaska" target="_blank">Elektronická přihláška</a></li>
+                <li><a href="http://uisk.ff.cuni.cz/listing.do?categoryId=14853" target="_blank">Informace pro uchazeče o studium</a></li>
+                <li><a href="https://www.facebook.com/spoleklibrain" target="_blank">Spolek Librain na Facebooku</a></li>
+                <li><a href="https://www.facebook.com/Ustav.Informacnich.Studii.a.Knihovnictvi" target="_blank">UISK na Facebooku</a></li>
+                <li><a href="http://uisk.ff.cuni.cz/listing.do?categoryId=14924" target="_blank">Jinonické informační pondělky</a></li>
+            </ul>
+        </div>
     </div>    
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -128,7 +153,14 @@
 
 
 
+        $('.more .btn').click(function (e) {
+            e.preventDefault();
+            $('.info-overlay').slideDown();
+        });
 
+        $('.info-overlay .close').click(function () {
+            $('.info-overlay').slideUp();
+        });
 
     </script>
 </body>

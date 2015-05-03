@@ -41,7 +41,9 @@ h1{
     font-size: 50px;
 }
 
-
+strong {
+    font-weight: bolder;
+}
 
 
 
@@ -455,6 +457,31 @@ a.btn:hover {
 }
 
 
+.info-overlay {
+    display: none;    
+    background-color: white;
+    border-radius: 20px;
+    width: 60%;
+    height: auto;
+    max-height: 100%;
+    overflow: auto;
+    position: absolute;
+    bottom: 0;
+    padding: 5%;
+    left: 20%;
+}
+
+.info-overlay .close {
+    position: absolute;
+    top: 1%;
+    right: 1%;    
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0px 20px;    
+    border-radius: 100px;
+}
+
 @media (max-width: 768px) {
     .claim-container {
         width: 100%;
@@ -516,6 +543,20 @@ a.btn:hover {
             padding: 5px;
             background-color: white;
             color: #555;
+        }
+
+    .info-overlay {
+            display: none;    
+            background-color: white;
+            border-radius: 20px;
+            width: 90%;
+            height: auto;
+            max-height: 100%;
+            overflow: auto;
+            position: absolute;
+            bottom: 0;
+            padding: 5%;
+            left: 5%;
         }
 }
 
