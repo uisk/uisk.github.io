@@ -120,10 +120,8 @@
             var viewportHeight = scrollBottom-scrollTop;
             var posTop = element.position().top;
             var diffFromBotomm = scrollBottom-posTop;
-            //console.log("diffFromBotomm: "  + diffFromBotomm);
             if(diffFromBotomm > 0){
                 var result = Math.pow(diffFromBotomm/viewportHeight,3 );
-                //console.log("Setting " + "." + element.attr('data-linked-element')  + " to " + Math.min(1,result));
                 $("." + element.attr('data-linked-element')).css("opacity",Math.min(1,result));
             }else{
                 $("." + element.attr('data-linked-element')).css("opacity",0);
@@ -156,7 +154,6 @@
         var showOrHideScrollButton = function(){
             var targetBottom = $(".fullsize.fifth").offset().top;
             var winPosBottom = $(document).scrollTop() + $(window).height();
-            console.log("Win pos bottom:" + winPosBottom + " target bottom: " + targetBottom);
             var btn = $('.scroll-btn');
             if(winPosBottom <= targetBottom){
                 btn.show(200);
@@ -186,7 +183,6 @@
                 var target = determineNextScrollTarget();
 
                 if(target != null){
-                    console.log("Scrolling to " + target.page);
                     $('html, body').animate({
                         scrollTop: $(target.page +  " .scroll-target").offset().top + target.offset,
                         completion:function(){
