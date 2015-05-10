@@ -64,7 +64,7 @@
                     <ul>
                         <li>Nejsme jen čísla. Každý má u nás jméno a svůj příběh.</li>
                         <li>Studujeme v malém počtu a máme tak blíže k vyučujícím a k sobě navzájem. </li>
-                        <li>Během výuky tvůj názor nezapadne. Vyslov ho nahlas a obhaj ho v diskuzi.</li>
+                        <li>Během výuky tvůj názor nezapadne. Vyslov ho nahlas a obhaj v diskuzi.</li>
                         <li>Hrajeme fotbal, pijem pivo, pouštíme si filmy, chodíme společně plavat, hážem frisbee, máme studentský spolek Librain <a href="https://www.facebook.com/spoleklibrain" target="_blank">a to se mi líbí.</a></li>
                     </ul>
                 </div>
@@ -148,9 +148,9 @@
             });
         } else {
             $('.scroll-btn').click(function () {
-
+                //$('.scroll-btn').addClass('fixed');
                 $('html, body').animate({
-                    scrollTop: $(".fullsize.second").offset().top
+                    scrollTop: $(".fullsize.second .claim-container").offset().top - 100
                 }, 2000);
             });
         }
