@@ -21,11 +21,11 @@
         <div class="claim title">
             <h1>Najdi si svůj<br/> správný směr</h1>
         </div>
-        <img class="scroll-btn" src="./images/icons/scroll.svg" width="50" height="50" />
+        <img class="scroll-btn fixed" src="./images/icons/scroll.svg" width="50" height="50" />
     </div>
     <div class="fill"></div>
     <div class="fullsize second" data-linked-element="mobile-second">
-        <div class="claim-container">
+        <div class="claim-container  scroll-target">
             <div class="claim-wrapper">
                 <div class="claim">
                     <h2>Žijeme hledáním</h2>
@@ -41,7 +41,7 @@
     </div>
     <div class="fill floor"></div>
     <div class="fullsize third" data-linked-element="mobile-third">
-        <div class="claim-container">
+        <div class="claim-container  scroll-target">
             <div class="claim-wrapper">
                 <div class="claim">
                     <h2>Doba si tě žádá</h2>
@@ -57,7 +57,7 @@
     </div>
     <div class="fill floor"></div>
     <div class="fullsize fourth" data-linked-element="mobile-fourth">
-        <div class="claim-container">
+        <div class="claim-container scroll-target">
             <div class="claim-wrapper">
                 <div class="claim">
                     <h2>Poznávej nové lidi a studuj v přátelské atmosféře</h2>
@@ -72,8 +72,8 @@
         </div>
     </div>
     <div class="fill floor"></div>
-    <div class="fullsize fifth" data-linked-element="mobile-fifth">
-        <div class="claim">
+    <div class="fullsize fifth " data-linked-element="mobile-fifth">
+        <div class="claim scroll-target">
             <div class="envelope">
                 <a href="https://is.cuni.cz/studium/login.php?do=prihlaska" class="">PODEJ PŘIHLÁŠKU<br/><span class="envelope-big">NA ÚISK<br/>TEĎ</span></a>
             </div>
@@ -131,6 +131,40 @@
             }
         }
 
+        var pages = [
+        ".fullsize.second",
+        ".fullsize.third",
+        ".fullsize.fourth",
+        ".fullsize.fifth"
+        ];
+
+        var determineNextScrollTarget = function(){
+            var winPos = $(document).scrollTop();
+            for(var i = 0; i < pages.length; i++){
+                var offsetTop = $(pages[i]).offset().top;
+                var offset = -100;
+                if(pages.length == i+1){
+                    offset = 0;
+                }
+                if(offsetTop > winPos){
+                    return {"offset": offset, "page" : pages[i]};
+                }
+            }
+            return null;
+        }
+
+        var showOrHideScrollButton = function(){
+            var targetBottom = $(".fullsize.fifth").offset().top;
+            var winPosBottom = $(document).scrollTop() + $(window).height();
+            console.log("Win pos bottom:" + winPosBottom + " target bottom: " + targetBottom);
+            var btn = $('.scroll-btn');
+            if(winPosBottom <= targetBottom){
+                btn.show(200);
+            }else{
+                btn.hide(200);
+            }
+        }
+
         var mobile = false;
         //Everything that have touch events is considered mobile
         mobile = Modernizr.touch;
@@ -148,12 +182,29 @@
             });
         } else {
             $('.scroll-btn').click(function () {
-                //$('.scroll-btn').addClass('fixed');
-                $('html, body').animate({
-                    scrollTop: $(".fullsize.second .claim-container").offset().top - 100
-                }, 2000);
+                $('.scroll-btn').addClass('fixed');
+                var target = determineNextScrollTarget();
+
+                if(target != null){
+                    console.log("Scrolling to " + target.page);
+                    $('html, body').animate({
+                        scrollTop: $(target.page +  " .scroll-target").offset().top + target.offset,
+                        completion:function(){
+                            showOrHideScrollButton();
+                        }
+                    }, 2000);
+                }
             });
+            $(document).scroll(function(){
+                //Show/Hide scroll button as needed
+                clearTimeout($.data(this, 'scrollTimer'));
+                $.data(this, 'scrollTimer', setTimeout(function() {
+                    showOrHideScrollButton();
+                }, 300));
+            })
         }
+
+
 
 
 
