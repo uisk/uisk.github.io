@@ -225,6 +225,10 @@ strong {
     background-image: url(./images/street.svg);
 }
 
+.mobile img.scroll-btn{
+    visibility: hidden;
+}
+
 .first img.scroll-btn {
     position: absolute;
     bottom: -10px;
