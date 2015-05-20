@@ -133,7 +133,7 @@
         ".fullsize.fifth"
         ];
 
-        var determineNextScrollTarget = function(){
+        function determineNextScrollTarget(){
             var winPos = $(document).scrollTop();
             for(var i = 0; i < pages.length; i++){
                 var offsetTop = $(pages[i]).offset().top;
@@ -148,7 +148,7 @@
             return null;
         }
 
-        var showOrHideScrollButton = function(){
+        function showOrHideScrollButton(){
             var targetBottom = $(".fullsize.fifth").offset().top;
             var winPosBottom = $(document).scrollTop() + $(window).height();
             var btn = $('.scroll-btn');
@@ -159,12 +159,11 @@
             }
         }
 
-        var mobile = false;
+        
         //Everything that have touch events is considered mobile
-        mobile = Modernizr.touch;
+        var mobile = Modernizr.touch;
         
         if(mobile){
-            // $(".fifth").css("height",$(window).height()*1.1);
             document.body.className+=' mobile'
             
             $(document).scroll(function(){
