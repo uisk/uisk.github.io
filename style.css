@@ -36,7 +36,6 @@ h1{
     margin-left: 30px;
     margin-right: auto;
     font-weight: bolder;
-    /*margin-top: 40px;*/
     text-align: left;
     font-size: 50px;
 }
@@ -45,8 +44,7 @@ strong {
     font-weight: bolder;
 }
 
-
-
+/* MOBILE BACKGROUNDS */
 .mobile .mobile-background{
     z-index: -1010;
     position: fixed;
@@ -54,11 +52,7 @@ strong {
     height: 100%;
     left: 0px;
     top: 0px;
-
-
-
 }
-
 
 .mobile  .mobile-background .mobile-fullsize{
     width: 100%;
@@ -69,51 +63,30 @@ strong {
     opacity: 0;
     top: 0px;
     left: 0px;
-
     position: absolute;
 }
 
 .mobile  .mobile-background .mobile-first{
     background-image: url(./images/street.svg);
-    /*background-color: red;*/
     opacity: 1;
     z-index: -1005;
 }
 .mobile  .mobile-background .mobile-second{
     background-image: url(./images/library.svg);
-    /*background-color: green;*/
     z-index: -1004;
 }
 .mobile  .mobile-background .mobile-third{
     background-image: url(./images/office.svg);
-    /*background-color: blue;*/
     z-index: -1003;
 }
 .mobile  .mobile-background .mobile-fourth{
     background-image: url(./images/bar.svg);
-    /*background-color: orange;*/
     z-index: -1002;
 }
 
-.mobile  .mobile-background .mobile-fifth{
-/*    background-image: url(./images/prihlaska.svg);
-    background-position: top center;
-    background-size: 1200px 600px;
-
-    z-index: -1001;*/
-
+.mobile img.scroll-btn{
+    visibility: hidden;
 }
-
-/*.mobile  .mobile-background .mobile-fifth {
-  background-image: url(./images/prihlaska.svg);
-  background-position: top center;
-  background-size: 1200px 600px;
-  background-repeat: no-repeat;
-  background-color: #b2e0f8;
-  background-attachment: fixed;
-  overflow: hidden;
-}*/
-
 
 .fullsize {
     background-attachment: fixed;
@@ -179,29 +152,6 @@ strong {
     vertical-align: top;
 }
 
-.claim li p {
-    /*margin-left: 40px;*/
-}
-
-.claim .bullet{
-    background-color: rgb(137,  137, 137 );
-    border-radius: 9000px;
-    width: 30px;
-    height: 30px;
-    float: left;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.claim .bullet-wrap{
-    margin-top: auto;
-    margin-bottom: auto;
-    height: 100%;
-
-}
-
-
-
 .mobile .first,
 .mobile .second,
 .mobile .third,
@@ -225,17 +175,12 @@ strong {
     background-image: url(./images/street.svg);
 }
 
-.mobile img.scroll-btn{
-    visibility: hidden;
-}
-
 .first img.scroll-btn {
     position: absolute;
     bottom: -10px;
-    left:  49%;  
-
-
+    left:  49%;
 }
+
 .first img.scroll-btn.fixed{
     position: fixed;
     left:  49%;
@@ -243,16 +188,9 @@ strong {
     z-index: 50;
 }
 
-
-
-
-
-
 .second {
     background-image: url(./images/library.svg);
 }
-
-
 
 .second .claim-container{
     border-color: rgba(0, 105, 84, .5);
@@ -276,6 +214,7 @@ strong {
 .second li:nth-child(4){
     background-image: url(./images/icons/1-4.svg);
 }
+
 
 .third {
     background-image: url(./images/office.svg);
@@ -311,8 +250,6 @@ strong {
     background-image: url(./images/bar.svg);
 }
 
-
-
 .fourth .claim-container{
      border-color: rgba(37, 56,  99, .5);
 }
@@ -323,7 +260,7 @@ strong {
     border-bottom: solid 3px rgb(37, 56,  99);
 }
 
-.fourth a{
+.fourth a {
     color: rgb(37, 56,  99);
 }
 
@@ -345,8 +282,6 @@ strong {
 }
 
 
-
-
 .fifth {
   background-image: url(./images/prihlaska.svg);
   background-position: top center;
@@ -358,11 +293,6 @@ strong {
   overflow: hidden;
 }
 
-.fifth .claim{
-}
-
-
-
 .fifth .envelope{
     width: 176px;
     height: 177px;
@@ -372,12 +302,12 @@ strong {
     margin-top: 71px;
     padding-top: 0px;
     font-size: 18px;
-
 }
 
 .mobile .fifth .envelope{
     margin-top: 71px;
 }
+
 a.btn {
         background: none;
         border: dashed 4px white;
@@ -387,7 +317,7 @@ a.btn {
         color: white;
         text-decoration: none;
         display: inline-block;
-    }
+}
 
 a.btn:hover {
     background-color: rgb(255,255,255);
@@ -414,8 +344,6 @@ a.btn:hover {
         background-color: rgba(255,255,255, .7);
         color: #777;
     }
-
-
 
 .fifth .envelope .envelope-big{
     font-size: 37px;
@@ -446,7 +374,6 @@ a.btn:hover {
     padding-right: 10px;
 }
 
-
 .fifth .more {
     margin-top: 20px;   
 }
@@ -471,14 +398,6 @@ a.btn:hover {
     border-top: 4px solid rgb(250 ,250,250);
     border-bottom: 4px solid rgb(250 ,250,250);
 }
-
-
-
-
-.second .claim-container{
-    /*background-image: url(./images/library_textbox.svg);*/
-}
-
 
 .info-overlay {
     display: none;    
