@@ -175,6 +175,28 @@
                 }
         }
 
+        /**
+         * detect IE
+         * returns version of IE or false, if browser is not Internet Explorer
+         */
+        Modernizr.addTest('ie', function () {
+            var ua = window.navigator.userAgent;
+            var msie = ua.indexOf('MSIE ') > 0;
+            var ie11 = ua.indexOf('Trident/') > 0;
+            var ie12 = ua.indexOf('Edge/') > 0;
+            return msie || ie11 || ie12;
+        });
+
+        var internetExplorer = Modernizr.ie;
+        if(internetExplorer !== false){
+            console.log("Detecting ie")
+            document.body.className += ' ie' //This crashes IE :-(
+        }else{
+            console.log("NOT ie")
+        }
+
+
+
         
         //Everything that have touch events is considered mobile
         var mobile = Modernizr.touch;
