@@ -126,6 +126,8 @@
             }
         }
 
+        var isScrolling = false;
+
         var pages = [
         ".fullsize.second",
         ".fullsize.third",
@@ -159,6 +161,20 @@
             }
         }
 
+        function scrollToNextTarget(){
+                var target = determineNextScrollTarget();
+
+                if(target != null && isScrolling == false){
+                    $('html, body').animate({
+                        scrollTop: $(target.page +  " .scroll-target").offset().top + target.offset,
+                        completion:function(){
+                            showOrHideScrollButton();
+                            
+                        }
+                    }, 2000);
+                }
+        }
+
         
         //Everything that have touch events is considered mobile
         var mobile = Modernizr.touch;
@@ -174,18 +190,9 @@
                 });                
             });
         } else {
-            $('.scroll-btn').click(function () {
+            $('.first').click(function () {
                 $('.scroll-btn').addClass('fixed');
-                var target = determineNextScrollTarget();
-
-                if(target != null){
-                    $('html, body').animate({
-                        scrollTop: $(target.page +  " .scroll-target").offset().top + target.offset,
-                        completion:function(){
-                            showOrHideScrollButton();
-                        }
-                    }, 2000);
-                }
+                scrollToNextTarget();
             });
             $(document).scroll(function(){
                 //Show/Hide scroll button as needed
@@ -208,6 +215,8 @@
         $('.info-overlay .close').click(function () {
             $('.info-overlay').slideUp();
         });
+
+
 
        
 
