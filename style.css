@@ -7,7 +7,7 @@ html {
 }
 
 /* Fix IE scroll flickering bug */
-html{
+.ie html{
     overflow: hidden;    
 }
 .ie body{
