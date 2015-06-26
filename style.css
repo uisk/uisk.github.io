@@ -150,6 +150,10 @@ strong {
     
 }
 
+.ie .claim li{
+    background-size: 100%;
+}
+
 .claim li{
     
     background-position: 12px 50%;
