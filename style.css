@@ -12,6 +12,7 @@ html {
 }
 .ie body{
     overflow: auto;
+    overflow-x: hidden; 
 }
 
 
