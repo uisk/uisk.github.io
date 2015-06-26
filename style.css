@@ -150,8 +150,9 @@ strong {
     
 }
 
+/* Fixes the over correctness of IE in interpreting SVG attributes */
 .ie .claim li{
-    background-size: 100%;
+    background-size: 42px 42px;
 }
 
 .claim li{
