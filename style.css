@@ -308,6 +308,11 @@ strong {
   overflow: hidden;
 }
 
+/*Align the envelope correctly in IE */
+.ie .fifth{
+    left: 10px;
+}
+
 .fifth .envelope{
     width: 176px;
     height: 177px;
