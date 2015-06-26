@@ -6,6 +6,16 @@ html {
   box-sizing: inherit;
 }
 
+/* Fix IE scroll flickering bug */
+.ie html{
+    overflow: hidden;    
+}
+.ie body{
+    overflow: auto;
+}
+
+
+
 body {
     padding: 0;
     margin: 0;
