@@ -95,7 +95,7 @@ strong {
     z-index: -1002;
 }
 
-.mobile img.scroll-btn{
+.mobile img.scroll-btn, .ie img.scroll-btn{
     visibility: hidden;
 }
 
